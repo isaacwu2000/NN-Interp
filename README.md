@@ -17,3 +17,5 @@ I plot the manifold that is this neural network (the NN should resemble z (outpu
 Run `main.ipynb` from top to bottom with PyTorch and Matplotlib installed. The model has 25 trainable parameters and uses tanh hidden activations. Adam training is followed by L-BFGS refinement, targeting held-out MSE below 0.001.
 
 The notebook plots the learned surface at several training stages, with held-out validation MSE beside each plot. An independent final test set is used to report final accuracy. Training can take a few minutes on a CPU.
+
+Linear probes include training/validation MSE curves, surfaces across probe training, PCA views of the first layer's four activations, and the original per-example case tables. All aggregate errors are explicitly labeled as mean squared error.
